@@ -1,0 +1,72 @@
+/* Reset default styles and set box-sizing */
+body, html, .hero-image, .container, .content {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif; /* Set default font to Poppins */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Adjust the viewport of the background image */
+.hero-image {
+    width: 100%;
+    height: 60vh;
+    background: url('snake.png') no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Enhanced overlay text for readability with a powerful theme */
+.content {
+    text-align: center;
+    margin-top: 2rem;
+    color: #007BFF;  /* Electric Blue for main text */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007BFF; /* Electric Blue for headers */
+    font-weight: 600; /* A bold weight for headers to make them stand out */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #2C3E50; /* Charcoal Gray for secondary text to provide contrast */
+}
+
+.email-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #007BFF; /* Electric Blue border for input */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 300px;
+}
+
+button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #007BFF; /* Electric Blue for button background */
+    color: #FFFFFF; /* White for button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 600; /* Bold font weight for button to make it powerful */
+}
+
+button:hover {
+    background-color: #0056b3; /* Slightly darker blue for hover effect */
+    color: white;
+}
